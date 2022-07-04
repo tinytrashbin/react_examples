@@ -1,7 +1,6 @@
 import {Header} from './header';
 import {useImmer} from './library';
 
-// Using "useImmer" hook.
 function Example2() {
   const [state, updateState] = useImmer({
     books: [

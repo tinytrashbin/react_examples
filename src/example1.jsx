@@ -3,7 +3,6 @@ import {example1_slice} from './example1_slice';
 import { useSelector, useDispatch} from './redux_toolkit_glue';
 import {Header} from './header';
 
-// Using "redux_toolkit_glue".
 function Example1() {
   const state = useSelector(store => store.example1_slice)
   const dispatch = useDispatch();
