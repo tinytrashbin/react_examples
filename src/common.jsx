@@ -1,6 +1,6 @@
-import {Example1} from './example1';
-import {Example2} from './example2';
-import {Example3} from './example3';
+import Example1 from './example1';
+import Example2 from './example2';
+import Example3 from './example3';
 import {Routes, Route, HashRouter} from "react-router-dom"
 
 function MainFunc() {

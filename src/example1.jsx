@@ -4,7 +4,7 @@ import { useSelector, useDispatch} from './redux_toolkit_glue';
 import {Header} from './header';
 
 // Using "redux_toolkit_glue".
-export function Example1() {
+function Example1() {
   const state = useSelector(store => store.example1_slice)
   const dispatch = useDispatch();
 

@@ -2,7 +2,7 @@ import {Header} from './header';
 import {useImmer} from './library';
 
 // Using "useImmer" hook.
-export function Example2() {
+function Example2() {
   const [state, updateState] = useImmer({
     books: [
       {id: 1, is_open: true, price: 100},
@@ -58,3 +58,5 @@ export function Example2() {
     </div>
   );
 }
+
+export default Example2;

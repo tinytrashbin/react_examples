@@ -1,6 +1,6 @@
 import {Header} from './header';
 
-export function Example3() {
+function Example3() {
   return (
     <div >
       <Header/>
@@ -10,3 +10,5 @@ export function Example3() {
     </div>
   );
 }
+
+export default Example3;
