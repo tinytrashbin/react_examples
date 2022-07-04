@@ -1,13 +1,13 @@
 import {Example1} from './example1';
 import {Example2} from './example2';
 import {Example3} from './example3';
-import {Routes, Route, BrowserRouter} from "react-router-dom"
+import {Routes, Route, HashRouter} from "react-router-dom"
 
 function MainFunc() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-        <Route path="/" >
+        <Route path="" >
           <Route index element={<Example1 />} />
           <Route path="example1" element={<Example1 />} />
           <Route path="example2" element={<Example2 />} />
@@ -15,7 +15,7 @@ function MainFunc() {
           <Route path="*" element={<h1>Invalid</h1>} />
         </Route>
       </Routes>
-    </BrowserRouter>);
+    </HashRouter>);
 }
 
 export default MainFunc;
