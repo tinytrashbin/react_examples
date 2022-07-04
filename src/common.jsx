@@ -7,11 +7,11 @@ function MainFunc() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="" >
-          <Route index element={<Example1 />} />
-          <Route path="example1" element={<Example1 />} />
-          <Route path="example2" element={<Example2 />} />
-          <Route path="example3" element={<Example3 />} />
+        <Route >
+          <Route path="/" element={<Example1 />} />
+          <Route path="/example1" element={<Example1 />} />
+          <Route path="/example2" element={<Example2 />} />
+          <Route path="/example3" element={<Example3 />} />
           <Route path="*" element={<h1>Invalid</h1>} />
         </Route>
       </Routes>
